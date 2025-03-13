@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 
 const ComparisonSection = () => {
   return (
-    <section id="comparison-section" className="py-24 relative overflow-hidden bg-space-100">
+    <section id="comparison-section" className="py-16 md:py-24 relative overflow-hidden bg-space-100">
       <div className="absolute inset-0 opacity-5 bg-cyber-grid bg-[length:50px_50px]"></div>
       <div className="container max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="inline-block px-4 py-1 mb-4 rounded-full bg-neon-purple/20 text-neon-purple text-sm font-medium border border-neon-purple/30">
             Choose Your Experience
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white text-glow">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white text-glow">
             Select Your Simulated Time Travel Experience
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             Explore different dimensions of reality with our specialized AI companions
           </p>
         </div>
@@ -57,7 +57,7 @@ const ComparisonSection = () => {
                 </ul>
               </div>
               <div className="p-4 bg-neon-blue/10 rounded-md border border-neon-blue/20">
-                <p className="italic text-gray-300">
+                <p className="italic text-gray-300 text-sm sm:text-base">
                   "The fabric of reality is yours to unravel. Where shall we journey? Will we step into an Alternate History, glimpse a Possible Future, or venture into a Reality Beyond Comprehension?"
                 </p>
               </div>
@@ -67,7 +67,7 @@ const ComparisonSection = () => {
                 href="https://chatgpt.com/g/g-67d2f00c50dc81919f3c9e4447cf705c-imagination-traveler-gpt" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="cyber-button w-full px-6 py-3 rounded-full bg-gradient-to-r from-neon-cyan to-neon-blue text-white font-medium shadow-neon-blue hover:shadow-lg hover:from-neon-blue hover:to-neon-cyan transition-all duration-300 text-center"
+                className="cyber-button w-full px-4 sm:px-6 py-3 rounded-full bg-gradient-to-r from-neon-cyan to-neon-blue text-white font-medium shadow-neon-blue hover:shadow-lg hover:from-neon-blue hover:to-neon-cyan transition-all duration-300 text-center text-sm sm:text-base"
               >
                 Begin Interdimensional Travel
               </a>
@@ -110,7 +110,7 @@ const ComparisonSection = () => {
                 </ul>
               </div>
               <div className="p-4 bg-neon-orange/10 rounded-md border border-neon-orange/20">
-                <p className="italic text-gray-300">
+                <p className="italic text-gray-300 text-sm sm:text-base">
                   "Great Scott! User, what date would you like to teleport to, & where do you want to go?"
                 </p>
               </div>
@@ -120,7 +120,7 @@ const ComparisonSection = () => {
                 href="https://time-machine-gpt.lovable.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="cyber-button w-full px-6 py-3 rounded-full bg-gradient-to-r from-neon-orange to-neon-magenta text-white font-medium shadow-neon-magenta hover:shadow-lg hover:from-neon-magenta hover:to-neon-orange transition-all duration-300 text-center"
+                className="cyber-button w-full px-4 sm:px-6 py-3 rounded-full bg-gradient-to-r from-neon-orange to-neon-magenta text-white font-medium shadow-neon-magenta hover:shadow-lg hover:from-neon-magenta hover:to-neon-orange transition-all duration-300 text-center text-sm sm:text-base"
               >
                 Begin Historical Time Travel
               </a>
