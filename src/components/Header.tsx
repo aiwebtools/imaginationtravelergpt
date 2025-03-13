@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Telescope } from 'lucide-react';
+import { Telescope, Sparkle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
@@ -31,13 +31,16 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Telescope className="h-8 w-8 text-neon-cyan animate-pulse-glow" />
+            <div className="flex items-center">
+              <Telescope className="h-8 w-8 text-neon-cyan animate-pulse-glow" />
+              <Sparkle className="h-5 w-5 text-neon-magenta absolute" style={{ marginLeft: '4px', marginTop: '-12px' }} />
+            </div>
             <div>
               <h1 className="text-2xl font-bold text-white text-glow-cyan">
                 Imagination Traveler GPT
               </h1>
-              <p className="text-xs text-gray-400">
-                Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors">AiWebTools.Ai</a>
+              <p className="text-xs text-gray-400 flex items-center">
+                Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors ml-1 flex items-center"><span>AiWebTools.Ai</span> <Sparkle className="h-3 w-3 ml-1 text-neon-cyan" /></a>
               </p>
             </div>
           </div>
