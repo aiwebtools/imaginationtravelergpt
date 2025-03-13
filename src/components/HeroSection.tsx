@@ -119,8 +119,8 @@ const HeroSection = () => {
                 </div>
               </div>
               
-              {/* Quote Bubble */}
-              <div className="absolute -bottom-16 right-0 sm:right-4 md:right-8 max-w-xs glass-panel rounded-lg p-4 animate-float">
+              {/* Quote Bubble - Adjusted positioning for mobile */}
+              <div className="absolute -bottom-20 sm:-bottom-16 right-0 sm:right-4 md:right-8 max-w-xs glass-panel rounded-lg p-4 animate-float">
                 <div className="absolute -top-2 right-8 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white/10"></div>
                 <p className="text-white text-xs sm:text-sm italic">
                   "Where shall we journey? Will we step into an Alternate History, glimpse a Possible Future, or venture into a Reality Beyond Comprehension?"
