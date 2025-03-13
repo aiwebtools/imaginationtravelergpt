@@ -1,25 +1,28 @@
 
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const DisclaimerSection = () => {
+  const isMobile = useIsMobile();
+
   return (
-    <section id="disclaimer" className="py-24 relative overflow-hidden">
+    <section id="disclaimer" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute inset-0 star-field opacity-20"></div>
       <div className="container max-w-4xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 mb-4 rounded-full bg-neon-orange/20 text-neon-orange text-sm font-medium border border-neon-orange/30">
+        <div className="text-center mb-8 md:mb-16">
+          <span className="inline-block px-3 py-1 mb-3 md:mb-4 rounded-full bg-neon-orange/20 text-neon-orange text-xs md:text-sm font-medium border border-neon-orange/30">
             Important Information
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white text-glow">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-white text-glow">
             Legal Disclaimer
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Please review the following information regarding the use of Imagination Traveler GPT
           </p>
         </div>
 
-        <div className="glass-panel rounded-xl p-6 md:p-8">
-          <div className="space-y-6 text-gray-300 leading-relaxed">
+        <div className="glass-panel rounded-xl p-4 md:p-8">
+          <div className="space-y-4 md:space-y-6 text-gray-300 leading-relaxed text-sm md:text-base">
             <p>
               <strong className="text-white">Fictional Content Disclaimer:</strong> Imagination Traveler GPT generates fictional content based on user prompts. All dimensions, narratives, characters, and images produced are works of fiction and do not represent real events, predictions, scientific theories, or factual information unless explicitly stated otherwise.
             </p>
@@ -56,7 +59,7 @@ const DisclaimerSection = () => {
               <strong className="text-white">Service Availability:</strong> AI Web Tools LLC does not guarantee uninterrupted access to Imagination Traveler GPT and reserves the right to modify, suspend, or discontinue the service at any time without notice.
             </p>
             
-            <p className="text-sm text-gray-500 pt-4 border-t border-gray-800">
+            <p className="text-xs text-gray-500 pt-3 md:pt-4 border-t border-gray-800">
               This disclaimer may be updated periodically. Last updated: May 2025
             </p>
           </div>
