@@ -57,10 +57,10 @@ const HeroSection = () => {
                 Begin Your Journey
               </a>
               <a 
-                href="#how-it-works" 
+                href="#comparison-section" 
                 className="cyber-button px-8 py-3 rounded-full bg-transparent border border-neon-magenta/50 text-neon-magenta font-medium hover:bg-neon-magenta/10 transition-all duration-300"
               >
-                Learn More
+                Select Your Experience
               </a>
             </div>
             <p className="text-gray-500 mt-6 text-sm">
