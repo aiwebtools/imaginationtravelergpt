@@ -1,11 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import HeroSection from '@/components/HeroSection';
+import HowItWorksSection from '@/components/HowItWorksSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FaqSection from '@/components/FaqSection';
+import DisclaimerSection from '@/components/DisclaimerSection';
+import ConsentPopup from '@/components/ConsentPopup';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-space text-white overflow-x-hidden">
+      <Header />
+      
+      {/* Main Content */}
+      <main>
+        <HeroSection />
+        <HowItWorksSection />
+        <TestimonialsSection />
+        <FaqSection />
+        <DisclaimerSection />
+      </main>
+      
+      <Footer />
+      <ConsentPopup />
+      
+      {/* Background Effects */}
+      <div className="fixed inset-0 pointer-events-none z-[-1]">
+        <div className="absolute inset-0 star-field-dense opacity-40"></div>
+        
+        {/* Cyberpunk Grid */}
+        <div className="absolute inset-0 bg-cyber-grid bg-[length:60px_60px] opacity-10"></div>
+        
+        {/* Glowing Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-neon-blue opacity-5 filter blur-3xl animate-pulse-glow"></div>
+        <div className="absolute bottom-1/3 right-1/5 w-96 h-96 rounded-full bg-neon-magenta opacity-5 filter blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 left-1/2 w-80 h-80 rounded-full bg-neon-cyan opacity-5 filter blur-3xl animate-pulse-glow" style={{ animationDelay: '4s' }}></div>
       </div>
     </div>
   );

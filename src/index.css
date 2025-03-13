@@ -1,101 +1,232 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 191 100% 50%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 191 100% 50%;
+    --radius: 0.75rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-neon-blue/20 selection:text-white;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-space text-foreground antialiased overflow-x-hidden font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  .text-glow-cyan {
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+  }
+  
+  .text-glow-magenta {
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.7);
+  }
+  
+  .text-glow-blue {
+    text-shadow: 0 0 8px rgba(0, 128, 255, 0.7);
+  }
+  
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-panel {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .neo-brutalism {
+    box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.2);
+  }
+  
+  .star-field {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .star-field-dense {
+    background-image: 
+      radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+    background-size: 50px 50px, 100px 100px;
+  }
+}
+
+/* 3D Text Effect */
+.text-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.text-3d:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -0.2em;
+  left: 0.02em;
+  right: 0;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  transform: rotateX(60deg) skewX(-3deg);
+}
+
+/* Shooting Stars Animation */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw)) translateY(calc(-100vh)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: shooting-star 6s linear infinite;
+  z-index: -1;
+}
+
+.shooting-star:nth-child(1) {
+  top: 10%;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+  top: 30%;
+  left: -100px;
+  animation-delay: 2s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 50%;
+  left: -100px;
+  animation-delay: 4s;
+}
+
+.shooting-star:nth-child(4) {
+  top: 70%;
+  left: -100px;
+  animation-delay: 1s;
+}
+
+.shooting-star:nth-child(5) {
+  top: 90%;
+  left: -100px;
+  animation-delay: 3s;
+}
+
+/* Swirling Portal Animation */
+@keyframes portal-swirl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.portal-swirl {
+  animation: portal-swirl 20s linear infinite;
+}
+
+/* Button Hover Effect */
+.cyber-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cyber-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom right, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.1), rgba(0, 255, 255, 0));
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.cyber-button:hover:before {
+  transform: rotate(45deg) translateY(-5%);
+}
+
+.cyber-button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #00FFFF, #FF00FF, #0080FF, #8B5CF6);
+  z-index: -2;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cyber-button:hover:after {
+  opacity: 0.7;
 }
