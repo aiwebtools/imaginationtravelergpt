@@ -32,6 +32,16 @@ const Index = () => {
       <div className="fixed inset-0 pointer-events-none z-[-1]">
         <div className="absolute inset-0 star-field-dense opacity-40"></div>
         
+        {/* Shooting Stars */}
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        
         {/* Cyberpunk Grid */}
         <div className="absolute inset-0 bg-cyber-grid bg-[length:60px_60px] opacity-10"></div>
         
