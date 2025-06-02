@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Telescope, Sparkle } from 'lucide-react';
 
@@ -124,7 +123,7 @@ const Footer = () => {
               Privacy Policy
             </a>
             <a 
-              href="https://aiwebtools.ai/terms-of-services" 
+              href="https://aiwebtools.lovable.app/disclaimers" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-500 text-sm hover:text-neon-cyan transition-colors"
@@ -132,6 +131,13 @@ const Footer = () => {
               Terms of Service
             </a>
           </div>
+        </div>
+
+        {/* Small disclaimer */}
+        <div className="border-t border-gray-800 pt-4 mt-4">
+          <p className="text-gray-500 text-xs text-center">
+            For informational, educational and research purposes only.
+          </p>
         </div>
 
         {/* Oval More AI Tools Button */}

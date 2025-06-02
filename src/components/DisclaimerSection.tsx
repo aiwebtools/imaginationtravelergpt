@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -48,7 +47,7 @@ const DisclaimerSection = () => {
             </p>
             
             <p>
-              <strong className="text-white">Third-Party Services:</strong> Imagination Traveler GPT operates through OpenAI's platform and is subject to their terms of service and privacy policy in addition to our own.
+              <strong className="text-white">Third-Party Services:</strong> Imagination Traveler GPT operates through OpenAI's platform and is subject to their terms of service and privacy policy in addition to our own. For complete terms and conditions, please visit <a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors">our disclaimers page</a>.
             </p>
             
             <p>
