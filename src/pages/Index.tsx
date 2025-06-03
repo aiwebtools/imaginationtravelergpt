@@ -16,20 +16,32 @@ const Index = () => {
       <Header />
       
       {/* Main Content */}
-      <main>
-        <HeroSection />
-        <ComparisonSection />
-        <HowItWorksSection />
-        <TestimonialsSection />
-        <FaqSection />
-        <DisclaimerSection />
+      <main role="main">
+        <article>
+          <HeroSection />
+          <section aria-label="Comparison with other AI tools">
+            <ComparisonSection />
+          </section>
+          <section aria-label="How the interdimensional travel works">
+            <HowItWorksSection />
+          </section>
+          <section aria-label="User testimonials and experiences">
+            <TestimonialsSection />
+          </section>
+          <section aria-label="Frequently asked questions">
+            <FaqSection />
+          </section>
+          <section aria-label="Legal disclaimer and terms">
+            <DisclaimerSection />
+          </section>
+        </article>
       </main>
       
       <Footer />
       <ConsentPopup />
       
       {/* Background Effects */}
-      <div className="fixed inset-0 pointer-events-none z-[-1]">
+      <div className="fixed inset-0 pointer-events-none z-[-1]" aria-hidden="true">
         <div className="absolute inset-0 star-field-dense opacity-40"></div>
         
         {/* Shooting Stars */}
