@@ -143,7 +143,7 @@ const Footer = () => {
         {/* Oval More AI Tools Button */}
         <div className="fixed bottom-4 right-4 z-20">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="cyber-button inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white font-medium shadow-neon-magenta hover:shadow-lg transition-all duration-300"
