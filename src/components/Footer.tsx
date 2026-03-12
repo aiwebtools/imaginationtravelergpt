@@ -18,7 +18,7 @@ const Footer = () => {
                   Imagination Traveler GPT
                 </h3>
                 <p className="text-xs text-gray-400 flex items-center">
-                  Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors ml-1 flex items-center"><span>AiWebTools.Ai</span> <Sparkle className="h-3 w-3 ml-1 text-neon-cyan" /></a>
+                  Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors ml-1 flex items-center"><span>AiWebTools.Ai</span> <Sparkle className="h-3 w-3 ml-1 text-neon-cyan" /></a>
                 </p>
               </div>
             </div>
