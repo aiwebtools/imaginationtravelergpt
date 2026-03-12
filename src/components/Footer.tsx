@@ -18,7 +18,7 @@ const Footer = () => {
                   Imagination Traveler GPT
                 </h3>
                 <p className="text-xs text-gray-400 flex items-center">
-                  Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors ml-1 flex items-center"><span>AiWebTools.Ai</span> <Sparkle className="h-3 w-3 ml-1 text-neon-cyan" /></a>
+                  Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors ml-1 flex items-center"><span>AiWebTools.Ai</span> <Sparkle className="h-3 w-3 ml-1 text-neon-cyan" /></a>
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-neon-cyan transition-colors"
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-neon-cyan transition-colors"
@@ -143,7 +143,7 @@ const Footer = () => {
         {/* Oval More AI Tools Button */}
         <div className="fixed bottom-4 right-4 z-20">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="cyber-button inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white font-medium shadow-neon-magenta hover:shadow-lg transition-all duration-300"
